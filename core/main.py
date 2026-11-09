@@ -5,10 +5,9 @@ import os
 from PIL import Image
 from io import BytesIO
 
-os.environ["HTTP_PROXY"] = "http://127.0.0.1:12334"
-os.environ["HTTPS_PROXY"] = "http://127.0.0.1:12334"
+
 # توکن ربات
-TOKEN = "9219898463:AAHz9o_Tg6xegRUUj7hHl-QTEC9XHRPjTJo"
+TOKEN = "token"
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(commands=["start"])
